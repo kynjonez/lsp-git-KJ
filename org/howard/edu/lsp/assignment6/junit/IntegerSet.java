@@ -1,4 +1,4 @@
-package org.howard.edu.lsp.assignment4.implementation;
+package org.howard.edu.lsp.assignment6.junit;
 import java.util.Collections;
 import java.util.ArrayList;
 import java.util.List;
@@ -17,9 +17,7 @@ public class IntegerSet {
 		return this.set;
 	}
 
-	/**
-	 *  Clears the internal representation of the set
-	 */
+	// Clears the internal representation of the set
 
     public void clear() {
         set.clear();
@@ -41,11 +39,7 @@ public class IntegerSet {
     		return false;
     	}
     }
- 	/**
- 	 *  Returns true if the set contains the value, otherwise false
- 	 * @param value
- 	 * @return
- 	 */
+ 	// Returns true if the set contains the value, otherwise false
     
     public boolean contains(int value) {
     	if (set.contains(value)) {
@@ -62,7 +56,7 @@ public class IntegerSet {
     		throw new IntegerSetException("Error! This is an empty set.");
     	}
     	return largestItem;
-    } 
+    }  
     	
 	// TODO Auto-generated method stub
 	
@@ -70,11 +64,7 @@ private void IntegerSetException() {
 	// TODO Auto-generated method stub
 	
 }
-	/** 
-	 * Returns the smallest item in the set; Throws a IntegerSetException if the set is empty
-	 * @return
-	 * @throws IntegerSetException
-	 */
+	// Returns the smallest item in the set; Throws a IntegerSetException if the set is empty
     public int smallest() throws IntegerSetException {
     	int smallestItem = Collections.min(set);
     	if (set.isEmpty()) {
@@ -84,10 +74,7 @@ private void IntegerSetException() {
     	return smallestItem;
     } 
    
-    /**
-     *  Adds an item to the set or does nothing it already there	
-     * @param item
-     */
+    // Adds an item to the set or does nothing it already there	
     public void add(int item) {
     	boolean exists = false;
     	for (int i=0;i<set.size();i++) {
@@ -106,10 +93,7 @@ private void IntegerSetException() {
     		}
     	}
     }
-    /** 
-     * Set union
-     * @param intSetb
-     */
+    // Set union
     public void union(IntegerSet intSetb) {
     	set.addAll(intSetb.getSet(set));
     	set.toString();
@@ -125,10 +109,7 @@ private void IntegerSetException() {
     	set.toString();
     }  
   
-    /** 
-     * Returns true if the set is empty, false otherwise
-     * @return
-     */
+    // Returns true if the set is empty, false otherwise
     public boolean isEmpty() {
     	if (set.isEmpty()) {
     		return true;
@@ -142,3 +123,6 @@ private void IntegerSetException() {
     }
 
 }
+
+
+
