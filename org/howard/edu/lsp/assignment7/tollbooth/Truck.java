@@ -6,4 +6,5 @@ public interface Truck
 	public int getNumAxles();
 	//gets weight of truck
 	public int getWeight();
+	
 }

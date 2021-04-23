@@ -4,5 +4,6 @@ public interface TollBooth
 {
 	public void Display();
 	public void tollCalculation(Truck T);
+	
 }
 

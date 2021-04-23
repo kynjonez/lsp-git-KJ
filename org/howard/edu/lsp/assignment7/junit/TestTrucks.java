@@ -33,6 +33,7 @@ public class TestTrucks
 		booth.tollCalculation(Daewoo);
 		booth.Display();
 		
+		
 	}
 	
 }

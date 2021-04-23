@@ -34,4 +34,5 @@ public class Toll implements TollBooth
 	int receipts;
 	int count;
 	
+	
 }

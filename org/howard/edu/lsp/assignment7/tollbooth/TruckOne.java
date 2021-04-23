@@ -20,4 +20,5 @@ public class TruckOne extends Toll implements Truck
 	int Weight;
 
 
+	
 }
