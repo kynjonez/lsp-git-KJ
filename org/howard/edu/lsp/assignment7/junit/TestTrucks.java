@@ -28,7 +28,7 @@ public class TestTrucks
 		booth.Display();
 		System.out.println("**************************************");
 		
-		// NISSAN TRUCK
+		// DAEWOO TRUCK
 		System.out.println("Daewoo Truck:");
 		booth.tollCalculation(Daewoo);
 		booth.Display();
